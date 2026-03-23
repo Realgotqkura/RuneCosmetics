@@ -1,4 +1,11 @@
-name: Rune Cosmetics
+name: RuneCosmetics
 version: '1.0-SNAPSHOT'
 main: com.realgotqkura.runeCosmetics.RuneCosmetics
 api-version: '1.21'
+
+commands:
+  runes:
+    description: Opens the RuneCosmetics gui
+    permission: RuneCosmetics.op
+  runes_debug:
+    permission: RuneCosmetics.op
