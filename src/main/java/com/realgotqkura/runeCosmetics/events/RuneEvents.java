@@ -44,6 +44,10 @@ public class RuneEvents implements Listener {
                 blockLoc.getWorld().spawnParticle(rune.getParticle(), blockLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 2, new Particle.DustOptions(Color.fromRGB(255, 0, 0), 2));
 
             }
+        }else{
+            for(int i = 0; i < 5; i++){
+                blockLoc.getWorld().spawnParticle(rune.getParticle(), blockLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 1);
+            }
         }
     }
 
@@ -92,6 +96,10 @@ public class RuneEvents implements Listener {
                 attackLoc.getWorld().spawnParticle(rune.getParticle(), attackLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 2, new Particle.DustOptions(Color.fromRGB(255, 0, 0), 2));
 
             }
+        }else{
+            for(int i = 0; i < 5; i++){
+                attackLoc.getWorld().spawnParticle(rune.getParticle(), attackLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 1);
+            }
         }
     }
 
@@ -118,7 +126,10 @@ public class RuneEvents implements Listener {
                 blockLoc.getWorld().spawnParticle(rune.getParticle(), blockLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 2, new Particle.DustOptions(Color.fromRGB(255, 0, 0), 2));
 
             }
-        }
+        }else{
+            for(int i = 0; i < 5; i++){
+                blockLoc.getWorld().spawnParticle(rune.getParticle(), blockLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 1);
+            }}
     }
 
 
@@ -151,7 +162,10 @@ public class RuneEvents implements Listener {
                     if(rune == Rune.REDSTONE){
                         for(int i = 0; i < 5; i++){
                             attackLoc.getWorld().spawnParticle(rune.getParticle(), attackLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 2, new Particle.DustOptions(Color.fromRGB(255, 0, 0), 1));
-
+                        }
+                    }else{
+                        for(int i = 0; i < 5; i++){
+                            attackLoc.getWorld().spawnParticle(rune.getParticle(), attackLoc, 2, rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), rndm.nextFloat(-0.7f, 0.7f), 1);
                         }
                     }
                 });
