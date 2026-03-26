@@ -31,7 +31,7 @@ public class RunesGUI implements Listener {
     public static final String GUI_NAME = ChatColor.of("#B132E7") + "Runes GUI";
 
     private Rune[] runesInOrder = new Rune[]{
-            Rune.REDSTONE, Rune.EMERALD, Rune.FIRE, Rune.WRATH, Rune.SOUL_FIRE, Rune.EXPLOSION
+            Rune.REDSTONE, Rune.EMERALD, Rune.FIRE, Rune.WRATH, Rune.SOUL_FIRE, Rune.EXPLOSION, Rune.CLOUD
     };
 
     public void createInv(Player player){

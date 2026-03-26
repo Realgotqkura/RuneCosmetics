@@ -3,10 +3,11 @@ package com.realgotqkura.runeCosmetics.utils;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Particle;
+import org.bukkit.block.data.type.Bed;
 
 public enum Rune {
 
-    REDSTONE, EMERALD, FIRE, SOUL_FIRE, WRATH, EXPLOSION;
+    REDSTONE, EMERALD, FIRE, SOUL_FIRE, WRATH, EXPLOSION, CLOUD;
 
 
     public String getName(){
@@ -25,6 +26,7 @@ public enum Rune {
             case SOUL_FIRE -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIwY2I3M2YyMDdiMDdkMjU5Y2ExZWVmN2NhZGUzMDJjN2VhMTA0YjhhMGMyNDBiODk3YTU3Nzk3MTEyMmU1NiJ9fX0=";}
             case WRATH -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGZiOTdiMTdjNjM5NTM5MjY1OGYzMjcxOGFhNDZiZWZhMWMzMWQzNTcyNjUxYzMwZjdkMmJmM2I5M2Y2ZWFkOSJ9fX0=";}
             case EXPLOSION -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgzMWQ1NzIxOTUwZWZhOWFhNzk5NjdlYjE5MTZhYmViNjRjOTc4ZWE4NTkzYTBjNjgzMzU0ODA5YzZjMzYxZCJ9fX0=";}
+            case CLOUD -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhNGY0MWQwNGViODYwNGM1YjY2YmRlZTAxYmM3YzFiMGVjNDg2Y2U3NTg1NjI3ODQwNGZmYTkwYTg4MDM2In19fQ==";}
 
             default -> { return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmJiMzBmZDEyMTRkN2ViMGJmZWMyNTZhNDA2Mzk1ZDEzYmI4ZjMyYjQyYzkzMmE1ODJiNjBlNDIxZjE1NDIxIn19fQ=="; }
         }
@@ -38,6 +40,7 @@ public enum Rune {
             case SOUL_FIRE ->  {return ChatColor.of("#23C5CC");}
             case WRATH -> {return ChatColor.RED;}
             case EXPLOSION -> {return ChatColor.of("#AB8684");}
+            case CLOUD -> {return ChatColor.of("#A8EDEB");}
 
 
             default -> {return ChatColor.BLACK;}
@@ -52,6 +55,7 @@ public enum Rune {
             case SOUL_FIRE -> {return "☉";}
             case WRATH -> {return "☠";}
             case EXPLOSION -> {return "⚠";}
+            case CLOUD -> {return "☁";}
         }
 
         return "NO SYMBOL";
@@ -73,6 +77,7 @@ public enum Rune {
             case SOUL_FIRE -> {return Particle.SOUL_FIRE_FLAME;}
             case WRATH -> {return Particle.ANGRY_VILLAGER;}
             case EXPLOSION -> {return Particle.EXPLOSION;}
+            case CLOUD -> {return Particle.CLOUD;}
         }
 
         return null;
