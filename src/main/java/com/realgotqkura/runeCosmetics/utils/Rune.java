@@ -7,7 +7,8 @@ import org.bukkit.block.data.type.Bed;
 
 public enum Rune {
 
-    REDSTONE, EMERALD, FIRE, SOUL_FIRE, WRATH, EXPLOSION, CLOUD;
+    REDSTONE, EMERALD, FIRE, SOUL_FIRE, WRATH, EXPLOSION, CLOUD,
+    CRIT;
 
 
     public String getName(){
@@ -27,7 +28,7 @@ public enum Rune {
             case WRATH -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGZiOTdiMTdjNjM5NTM5MjY1OGYzMjcxOGFhNDZiZWZhMWMzMWQzNTcyNjUxYzMwZjdkMmJmM2I5M2Y2ZWFkOSJ9fX0=";}
             case EXPLOSION -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgzMWQ1NzIxOTUwZWZhOWFhNzk5NjdlYjE5MTZhYmViNjRjOTc4ZWE4NTkzYTBjNjgzMzU0ODA5YzZjMzYxZCJ9fX0=";}
             case CLOUD -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhNGY0MWQwNGViODYwNGM1YjY2YmRlZTAxYmM3YzFiMGVjNDg2Y2U3NTg1NjI3ODQwNGZmYTkwYTg4MDM2In19fQ==";}
-
+            case CRIT -> {return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVmZTI4MjMwODMyODY2NGIyYTAxOTQyNzVmODBiMDNiYzM5MGY0MzhhYTEwZDJkNDE5MGMxOTZlNGY5ZjdiYiJ9fX0=";}
             default -> { return "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmJiMzBmZDEyMTRkN2ViMGJmZWMyNTZhNDA2Mzk1ZDEzYmI4ZjMyYjQyYzkzMmE1ODJiNjBlNDIxZjE1NDIxIn19fQ=="; }
         }
     }
@@ -41,6 +42,7 @@ public enum Rune {
             case WRATH -> {return ChatColor.RED;}
             case EXPLOSION -> {return ChatColor.of("#AB8684");}
             case CLOUD -> {return ChatColor.of("#A8EDEB");}
+            case CRIT -> {return ChatColor.of("#69BFB4");}
 
 
             default -> {return ChatColor.BLACK;}
@@ -56,6 +58,7 @@ public enum Rune {
             case WRATH -> {return "☠";}
             case EXPLOSION -> {return "⚠";}
             case CLOUD -> {return "☁";}
+            case CRIT -> {return "߷";}
         }
 
         return "NO SYMBOL";
@@ -78,6 +81,7 @@ public enum Rune {
             case WRATH -> {return Particle.ANGRY_VILLAGER;}
             case EXPLOSION -> {return Particle.EXPLOSION;}
             case CLOUD -> {return Particle.CLOUD;}
+            case CRIT -> {return Particle.CRIT;}
         }
 
         return null;
